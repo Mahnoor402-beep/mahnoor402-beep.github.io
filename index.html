@@ -1,192 +1,463 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahnoor Rehman Abbasi - Electronics Graduate & AI Engineer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahnoor Rehman Abbasi - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #1a4d2e;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a4d2e 0%, #2d7a4f 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(26, 77, 46, 0.1);
+        }
+
+        nav {
+            background-color: #2d7a4f;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(26, 77, 46, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background-color: #f8fffe;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #1a4d2e;
+            box-shadow: 0 2px 4px rgba(26, 77, 46, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: #1a4d2e;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #2d7a4f;
+        }
+
+        h3 {
+            color: #2d7a4f;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #e8f5e9;
+            margin-bottom: 1rem;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-links a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .project-item, .experience-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 6px;
+            border-left: 3px solid #2d7a4f;
+        }
+
+        .project-item:last-child, .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .date {
+            color: #2d7a4f;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-tag {
+            background-color: #2d7a4f;
+            color: white;
+            padding: 0.7rem 1rem;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .cert-list {
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        .cert-item {
+            padding: 0.8rem;
+            background-color: white;
+            border-radius: 4px;
+            border-left: 3px solid #2d7a4f;
+        }
+
+        .cert-name {
+            color: #1a4d2e;
+            font-weight: 600;
+        }
+
+        .cert-org {
+            color: #2d7a4f;
+            font-size: 0.9rem;
+        }
+
+        .cert-date {
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        footer {
+            background-color: #1a4d2e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 </head>
-<body class="font-sans text-gray-200 bg-gray-900">
-  <!-- Navigation -->
-  <header class="bg-gray-900 shadow-sm fixed w-full z-10">
-    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="#" class="text-2xl font-bold text-[#0ff]">Mahnoor Rehman Abbasi</a>
-      <button id="menu-btn" class="block md:hidden focus:outline-none">
-        <svg class="h-6 w-6 text-[#0ff]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-      <nav id="menu" class="hidden md:block">
-        <ul class="flex space-x-6">
-          <li><a href="#about" class="text-gray-200 hover:text-[#0ff]">About</a></li>
-          <li><a href="#projects" class="text-gray-200 hover:text-[#0ff]">Projects</a></li>
-          <li><a href="#experience" class="text-gray-200 hover:text-[#0ff]">Experience</a></li>
-          <li><a href="#skills" class="text-gray-200 hover:text-[#0ff]">Skills</a></li>
-          <li><a href="#certifications" class="text-gray-200 hover:text-[#0ff]">Certifications</a></li>
-          <li><a href="#education" class="text-gray-200 hover:text-[#0ff]">Education</a></li>
-          <li><a href="#contact" class="text-gray-200 hover:text-[#0ff]">Contact</a></li>
+<body>
+    <header>
+        <h1>Mahnoor Rehman Abbasi</h1>
+        <p class="subtitle">Electronics Graduate & Emotion-AI Builder</p>
+        <p style="max-width: 800px; margin: 1rem auto;">I am an Electronics Engineering graduate from Quaid-i-Azam University (QAU), Islamabad, with hands-on experience in artificial intelligence, machine learning, NLP, predictive modeling, and data analytics. Currently an IT Support Specialist at AVN Shipping FZE. Passionate about multimodal machine learning, robotics, AI ethics, and building innovative AI solutions.</p>
+        <div class="contact-links">
+            <a href="mailto:mahnoor.ra0011@gmail.com">Email</a>
+            <a href="https://github.com/Mahnoor402-beep" target="_blank">GitHub</a>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#">Download Resume (PDF)</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
+    </nav>
+
+    <div class="container">
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <div class="project-item">
+                <h3>LifeLens: Multimodal Emotion AI</h3>
+                <p class="date">2025</p>
+                <p>Built an AI system capable of detecting human emotions across text, voice, and facial expressions in real time.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>SmartSplit: AI Expense Management App</h3>
+                <p class="date">2025</p>
+                <p>Developed a cross-platform app for intelligent group expense sharing and bill management.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>IVAMS: Intelligent Vehicle Automation and Monitoring System</h3>
+                <p class="date">2024</p>
+                <p>Developed two autonomous tanks powered by ESP32 microcontrollers, integrating IR and ultrasonic sensors, motion control, and real-time video streaming.</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <div class="experience-item">
+                <h3>IT Support Specialist</h3>
+                <p><strong>AVN Shipping FZE</strong> - Ajman, UAE</p>
+                <p class="date">December 2025 – Current</p>
+                <p>Provide technical support, troubleshoot hardware/software issues, manage IT infrastructure, and ensure smooth operations in a shipping and logistics environment.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Data Analyst</h3>
+                <p><strong>Lotus BPM AI</strong> - Remote, Texas, USA</p>
+                <p class="date">August 2025 – Current</p>
+                <p>Conduct data analysis for AI-driven process optimization, build interactive dashboards, automate workflows, and generate actionable insights to support data-driven decision-making.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Proxy Generating Agent</h3>
+                <p><strong>Hackta Connect</strong> - Remote, Pakistan</p>
+                <p class="date">September 2024 – September 2025</p>
+                <p>Designed AI-driven strategies boosting site engagement and produced 300+ blogs in technology, finance, and lifestyle domains.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Prompt Engineer (Internship)</h3>
+                <p><strong>Elite International</strong> - Islamabad, Pakistan</p>
+                <p class="date">August 2023 – January 2024</p>
+                <p>Engineered AI prompts for automation and NLP systems while supporting sales activities, including client requirement analysis, solution positioning, and assisting in converting prospects through AI-driven demonstrations and optimized workflows.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Chatbot Developer</h3>
+                <p><strong>Upwork</strong> - Remote</p>
+                <p class="date">August 2023 – January 2024</p>
+                <p>Built chatbot solutions for healthcare, e-commerce, and education sectors.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Artificial Intelligence Engineer</h3>
+                <p><strong>Overpass</strong> - Remote</p>
+                <p class="date">August 2021 – January 2025</p>
+                <p>Implemented ML algorithms and built predictive dashboards for performance monitoring.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">Machine Learning</div>
+                <div class="skill-tag">NLP</div>
+                <div class="skill-tag">Data Analytics</div>
+                <div class="skill-tag">Embedded Systems</div>
+                <div class="skill-tag">IoT</div>
+                <div class="skill-tag">Microsoft Office/Excel</div>
+                <div class="skill-tag">Prompt Engineering</div>
+                <div class="skill-tag">Principles of AI</div>
+                <div class="skill-tag">Digital Data Processing</div>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="cert-list">
+                <div class="cert-item">
+                    <div class="cert-name">SEO Fundamentals</div>
+                    <div class="cert-org">SEMrush Academy</div>
+                    <div class="cert-date">February 20, 2024</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Big Data Essentials</div>
+                    <div class="cert-org">Google</div>
+                    <div class="cert-date">February 18, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Neural Networks and Deep Learning</div>
+                    <div class="cert-org">DeepLearning.AI</div>
+                    <div class="cert-date">March 3, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">AI and Machine Learning Algorithms and Techniques</div>
+                    <div class="cert-org">Microsoft</div>
+                    <div class="cert-date">June 10, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Google Prompting Essentials</div>
+                    <div class="cert-org">Google</div>
+                    <div class="cert-date">July 5, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Microsoft AI & ML Engineering</div>
+                    <div class="cert-org">Microsoft</div>
+                    <div class="cert-date">March 8, 2024</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Microsoft IT Support Specialist</div>
+                    <div class="cert-org">Microsoft</div>
+                    <div class="cert-date">July 10, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Lithium Based Batteries</div>
+                    <div class="cert-org">Arizona State University</div>
+                    <div class="cert-date">July 15, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Zn and Ni Based Batteries</div>
+                    <div class="cert-org">Arizona State University</div>
+                    <div class="cert-date">July 23, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Primary and Secondary Batteries</div>
+                    <div class="cert-org">Arizona State University</div>
+                    <div class="cert-date">July 23, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Batteries and Electric Vehicles</div>
+                    <div class="cert-org">Arizona State University</div>
+                    <div class="cert-date">July 27, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Python</div>
+                    <div class="cert-org">Great Learning</div>
+                    <div class="cert-date">July 28, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Work Smarter with Microsoft Excel</div>
+                    <div class="cert-org">Microsoft</div>
+                    <div class="cert-date">July 30, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Microsoft Azure Machine Learning</div>
+                    <div class="cert-org">Microsoft AI</div>
+                    <div class="cert-date">August 5, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Google AI Essentials</div>
+                    <div class="cert-org">Google</div>
+                    <div class="cert-date">April 7, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Introduction to Electronics</div>
+                    <div class="cert-org">Georgia Institute of Technology</div>
+                    <div class="cert-date">April 18, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Self-Driving Cars</div>
+                    <div class="cert-org">University of Toronto</div>
+                    <div class="cert-date">January 7, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Introduction to Self-Driving Cars</div>
+                    <div class="cert-org">University of Toronto</div>
+                    <div class="cert-date">January 16, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Motion Planning for Self-Driving Cars</div>
+                    <div class="cert-org">University of Toronto</div>
+                    <div class="cert-date">January 17, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">State Estimation and Localization for Self-Driving Cars</div>
+                    <div class="cert-org">University of Toronto</div>
+                    <div class="cert-date">February 19, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">AI for Autonomous Vehicles and Robotics</div>
+                    <div class="cert-org">University of Michigan</div>
+                    <div class="cert-date">February 20, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Google IT Support</div>
+                    <div class="cert-org">Google</div>
+                    <div class="cert-date">May 10, 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Google Cybersecurity</div>
+                    <div class="cert-org">Google</div>
+                    <div class="cert-date">May 15, 2024</div>
+                </div>
+            </div>
+            <p style="margin-top: 1rem; color: #2d7a4f; font-style: italic;">All certification links available on LinkedIn.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="experience-item">
+                <h3>BS Electronics</h3>
+                <p><strong>Quaid-i-Azam University</strong> - Islamabad, Pakistan</p>
+                <p class="date">September 2020 – September 2024 (EQF Level 6)</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> mahnoor.ra0011@gmail.com</p>
+            <p><strong>Phone:</strong> (+971) 562142985</p>
+            <p><strong>Location:</strong> Al Bustan, Ajman, United Arab Emirates</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Mahnoor402-beep" style="color: #2d7a4f;">Mahnoor402-beep</a></p>
+            <p><strong>LinkedIn:</strong> <a href="#" style="color: #2d7a4f;">Profile</a></p>
+        </section>
     </div>
-  </header>
-  <!-- Hero Section -->
-  <section id="about" class="pt-20 pb-16 bg-gray-800">
-    <div class="container mx-auto px-6 text-center">
-      <h1 class="text-4xl font-bold text-[#0ff] mb-4">Mahnoor Rehman Abbasi</h1>
-      <p class="text-xl text-gray-200 mb-4">Electronics Graduate &amp; Emotion-AI Builder</p>
-      <div class="max-w-2xl mx-auto">
-        <p class="text-gray-300 italic">I am an Electronics Engineering graduate from Quaid-i-Azam University (QAU), Islamabad, with hands-on experience in artificial intelligence, machine learning, NLP, predictive modeling, and data analytics. Strengthened by extensive certifications in AI, deep learning, and cloud platforms. Currently an IT Support Specialist at AVN Shipping FZE. Passionate about multimodal machine learning, robotics, AI ethics, and building innovative AI solutions like LifeLens (Multimodal Emotion AI).</p>
-      </div>
-      <!-- Contact Links -->
-      <div class="mt-6 space-x-4">
-        <a href="mailto:mahnoor.ra0011@gmail.com" class="text-gray-200 hover:text-[#0ff]">Email</a>
-        <a href="https://github.com/Mahnoor402-beep" target="_blank" class="text-gray-200 hover:text-[#0ff]">GitHub</a>
-        <a href="https://www.linkedin.com/in/mahnoor-rehman-abbasi-76b98b223/" target="_blank" class="text-gray-200 hover:text-[#0ff]">LinkedIn</a>
-        <a href="RESUME.pdf" download class="text-gray-200 hover:text-[#0ff]">Download Resume (PDF)</a>
-      </div>
-    </div>
-  </section>
-  <!-- Projects -->
-  <section id="projects" class="py-16 bg-gray-900">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-semibold text-[#0ff] mb-8">Projects</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-bold text-gray-200">LifeLens: Multimodal Emotion AI (2025)</h3>
-          <p class="text-gray-300">Built an AI system capable of detecting human emotions across text, voice, and facial expressions in real time.</p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-bold text-gray-200">SmartSplit: AI Expense Management App (2025)</h3>
-          <p class="text-gray-300">Developed a cross-platform app for intelligent group expense sharing and bill management.</p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-bold text-gray-200">IVAMS: Intelligent Vehicle Automation and Monitoring System (2024)</h3>
-          <p class="text-gray-300">Developed two autonomous tanks powered by ESP32 microcontrollers, integrating IR and ultrasonic sensors, motion control, and real-time video streaming.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Experience -->
-  <section id="experience" class="py-16 bg-gray-800">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-semibold text-[#0ff] mb-8">Experience</h2>
-      <div class="space-y-12">
-        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-bold text-gray-200">IT Support Specialist - AVN Shipping FZE (Ajman, UAE)</h3>
-          <p class="text-gray-400 mb-2">10/12/2025 – Current</p>
-          <p class="text-gray-300">Provide technical support, troubleshoot hardware/software issues, manage IT infrastructure, and ensure smooth operations in a shipping and logistics environment.</p>
-        </div>
-        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-bold text-gray-200">Data Analyst - Lotus BPM AI (Remote, Texas, USA)</h3>
-          <p class="text-gray-400 mb-2">04/08/2025 – Current</p>
-          <p class="text-gray-300">Conduct data analysis for AI-driven process optimization, build interactive dashboards, automate workflows, and generate actionable insights to support data-driven decision-making.</p>
-        </div>
-        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-bold text-gray-200">Proxy Generating Agent - Hackta Connect (Remote, Pakistan)</h3>
-          <p class="text-gray-400 mb-2">01/09/2024 – 01/09/2025</p>
-          <p class="text-gray-300">Designed AI-driven strategies boosting site engagement and produced 300+ blogs in technology, finance, and lifestyle domains.</p>
-        </div>
-        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-bold text-gray-200">Prompt Engineer (Internship) - Elite International (Islamabad, Pakistan)</h3>
-          <p class="text-gray-400 mb-2">01/08/2023 – 01/01/2024</p>
-          <p class="text-gray-300">Engineered AI prompts for automation and NLP systems while supporting sales activities, including client requirement analysis, solution positioning, and assisting in converting prospects through AI-driven demonstrations and optimized workflows.</p>
-        </div>
-        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-bold text-gray-200">Chatbot Developer - Upwork (Remote)</h3>
-          <p class="text-gray-400 mb-2">01/08/2023 – 10/01/2024</p>
-          <p class="text-gray-300">Built chatbot solutions for healthcare, e-commerce, and education sectors.</p>
-        </div>
-        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-bold text-gray-200">Artificial Intelligence Engineer - Overpass (Remote)</h3>
-          <p class="text-gray-400 mb-2">01/08/2021 – 01/01/2025</p>
-          <p class="text-gray-300">Implemented ML algorithms and built predictive dashboards for performance monitoring.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Skills -->
-  <section id="skills" class="py-16 bg-gray-900">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-semibold text-[#0ff] mb-8">Skills</h2>
-      <div class="flex flex-wrap gap-3">
-        <span class="px-3 py-1 border border-[#0ff] rounded-full text-[#0ff]">Python</span>
-        <span class="px-3 py-1 border border-[#0ff] rounded-full text-[#0ff]">Machine Learning</span>
-        <span class="px-3 py-1 border border-[#0ff] rounded-full text-[#0ff]">NLP</span>
-        <span class="px-3 py-1 border border-[#0ff] rounded-full text-[#0ff]">Data Analytics</span>
-        <span class="px-3 py-1 border border-[#0ff] rounded-full text-[#0ff]">Embedded Systems</span>
-        <span class="px-3 py-1 border border-[#0ff] rounded-full text-[#0ff]">IoT</span>
-        <span class="px-3 py-1 border border-[#0ff] rounded-full text-[#0ff]">Microsoft Office/Excel</span>
-        <span class="px-3 py-1 border border-[#0ff] rounded-full text-[#0ff]">Prompt Engineering</span>
-        <span class="px-3 py-1 border border-[#0ff] rounded-full text-[#0ff]">Principles of AI</span>
-        <span class="px-3 py-1 border border-[#0ff] rounded-full text-[#0ff]">Digital Data Processing</span>
-      </div>
-    </div>
-  </section>
-  <!-- Certifications -->
-  <section id="certifications" class="py-16 bg-gray-800">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-semibold text-[#0ff] mb-8">Certifications</h2>
-      <ul class="list-disc list-inside text-gray-300 space-y-3 max-w-4xl mx-auto">
-        <li>SEO Fundamentals – SEMrush Academy (20/02/2024)</li>
-        <li>Big Data Essentials – Google (18/02/2025)</li>
-        <li>Neural Networks and Deep Learning – DeepLearning.AI (03/03/2025)</li>
-        <li>AI and Machine Learning Algorithms and Techniques – Microsoft (10/06/2025)</li>
-        <li>Google Prompting Essentials – Google (05/07/2025)</li>
-        <li>Microsoft AI & ML Engineering – Microsoft (08/03/2024)</li>
-        <li>Microsoft IT Support Specialist – Microsoft (10/07/2025)</li>
-        <li>Lithium Based Batteries – Arizona State University (15/07/2025)</li>
-        <li>Zn and Ni Based Batteries – Arizona State University (23/07/2025)</li>
-        <li>Primary and Secondary Batteries – Arizona State University (23/07/2025)</li>
-        <li>Batteries and Electric Vehicles – Arizona State University (27/07/2025)</li>
-        <li>Python – Great Learning (28/07/2025)</li>
-        <li>Work Smarter with Microsoft Excel – Microsoft (30/07/2025)</li>
-        <li>Microsoft Azure Machine Learning – Microsoft AI (05/08/2025)</li>
-        <li>Google AI Essentials – Google (07/04/2025)</li>
-        <li>Introduction to Electronics – Georgia Institute of Technology (18/04/2025)</li>
-        <li>Self-Driving Cars – University of Toronto (07/01/2025)</li>
-        <li>Introduction to Self-Driving Cars – University of Toronto (16/01/2025)</li>
-        <li>Motion Planning for Self-Driving Cars – University of Toronto (17/01/2025)</li>
-        <li>State Estimation and Localization for Self-Driving Cars – University of Toronto (19/02/2025)</li>
-        <li>AI for Autonomous Vehicles and Robotics – University of Michigan (20/02/2025)</li>
-        <li>Google IT Support – Google (10/05/2025)</li>
-        <li>Google Cybersecurity – Google (15/05/2024)</li>
-      </ul>
-      <p class="text-gray-400 mt-6 text-center">All certification links available on <a href="https://www.linkedin.com/in/mahnoor-rehman-abbasi-76b98b223/details/certifications/" target="_blank" class="text-[#0ff] hover:underline">LinkedIn</a>.</p>
-    </div>
-  </section>
-  <!-- Education -->
-  <section id="education" class="py-16 bg-gray-900">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-semibold text-[#0ff] mb-8">Education</h2>
-      <div class="text-gray-300">
-        <h3 class="text-xl font-bold text-gray-200">BS Electronics</h3>
-        <p>Quaid-i-Azam University, Islamabad, Pakistan</p>
-        <p class="text-gray-400">September 2020 – September 2024 (EQF Level 6)</p>
-      </div>
-    </div>
-  </section>
-  <!-- Contact / Footer -->
-  <footer id="contact" class="py-8 bg-gray-900">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-xl font-semibold text-[#0ff] mb-4">Contact</h2>
-      <p class="text-gray-300 mb-2">Email: <a href="mailto:mahnoor.ra0011@gmail.com" class="hover:underline text-[#0ff]">mahnoor.ra0011@gmail.com</a></p>
-      <p class="text-gray-300 mb-2">Phone: (+971) 562142985</p>
-      <p class="text-gray-300 mb-2">Location: Al Bustan, Ajman, United Arab Emirates</p>
-      <p class="text-gray-300">GitHub: <a href="https://github.com/Mahnoor402-beep" target="_blank" class="hover:underline text-[#0ff]">Mahnoor402-beep</a> | LinkedIn: <a href="https://www.linkedin.com/in/mahnoor-rehman-abbasi-76b98b223/" target="_blank" class="hover:underline text-[#0ff]">Profile</a></p>
-    </div>
-  </footer>
-  <script>
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const menu = document.getElementById('menu');
-    const menuIcon = document.getElementById('menu-icon');
-    const closeIcon = document.getElementById('close-icon');
-    menuBtn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-      menuIcon.classList.toggle('hidden');
-      closeIcon.classList.toggle('hidden');
-    });
-  </script>
+
+    <footer>
+        <p>&copy; 2025 Mahnoor Rehman Abbasi. All rights reserved.</p>
+    </footer>
 </body>
 </html>
