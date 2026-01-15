@@ -13,71 +13,26 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f7fa;
-            color: #2c3e50;
+            background-color: #ffffff;
+            color: #1a4d2e;
             line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            background: linear-gradient(135deg, #1a4d2e 0%, #2d7a4f 100%);
             color: white;
             padding: 3rem 2rem;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: #bfdbfe;
-            margin-bottom: 1rem;
-            font-weight: 400;
-        }
-
-        .header-description {
-            max-width: 900px;
-            margin: 1rem auto;
-            font-size: 0.95rem;
-            color: #e0e7ff;
-            line-height: 1.7;
-        }
-
-        .contact-links {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 1.5rem;
-        }
-
-        .contact-links a {
-            color: white;
-            text-decoration: none;
-            padding: 0.6rem 1.5rem;
-            background-color: rgba(255, 255, 255, 0.15);
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .contact-links a:hover {
-            background-color: rgba(255, 255, 255, 0.25);
-            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(26, 77, 46, 0.1);
         }
 
         nav {
-            background-color: #1e293b;
-            padding: 0;
+            background-color: #2d7a4f;
+            padding: 1rem;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(26, 77, 46, 0.2);
         }
 
         nav ul {
@@ -85,184 +40,182 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 0;
-            max-width: 1200px;
-            margin: 0 auto;
+            gap: 1rem;
         }
 
         nav a {
-            color: #cbd5e1;
+            color: white;
             text-decoration: none;
             font-weight: 500;
-            transition: all 0.3s ease;
-            padding: 1rem 1.5rem;
-            display: block;
+            transition: color 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
             font-size: 0.9rem;
-            border-bottom: 3px solid transparent;
         }
 
         nav a:hover {
-            background-color: #334155;
-            color: white;
-            border-bottom-color: #3b82f6;
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2.5rem 2rem;
+            padding: 2rem;
         }
 
         section {
-            margin-bottom: 2.5rem;
-            background-color: white;
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-            border-left: 4px solid #3b82f6;
+            margin-bottom: 3rem;
+            background-color: #f8fffe;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #1a4d2e;
+            box-shadow: 0 2px 4px rgba(26, 77, 46, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
         }
 
         h2 {
-            color: #1e3a8a;
-            font-size: 1.8rem;
+            color: #1a4d2e;
+            font-size: 2rem;
             margin-bottom: 1.5rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 2px solid #e5e7eb;
-            font-weight: 600;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #2d7a4f;
         }
 
         h3 {
-            color: #1e40af;
-            font-size: 1.2rem;
+            color: #2d7a4f;
+            font-size: 1.3rem;
             margin-bottom: 0.5rem;
-            font-weight: 600;
         }
 
-        .competencies {
-            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-            padding: 1.25rem;
-            border-radius: 8px;
-            margin-top: 1.5rem;
-            border-left: 3px solid #3b82f6;
+        .subtitle {
+            font-size: 1.2rem;
+            color: #e8f5e9;
+            margin-bottom: 1rem;
         }
 
-        .competencies strong {
-            color: #1e40af;
-            font-size: 1.05rem;
+        .contact-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
         }
 
-        .experience-item, .research-item, .project-item {
+        .contact-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-links a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .project-item, .experience-item, .research-item {
             margin-bottom: 2rem;
             padding: 1.5rem;
-            background-color: #f8fafc;
-            border-radius: 8px;
-            border-left: 3px solid #60a5fa;
-            transition: all 0.3s ease;
+            background-color: white;
+            border-radius: 6px;
+            border-left: 3px solid #2d7a4f;
         }
 
-        .experience-item:hover, .research-item:hover, .project-item:hover {
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
-            transform: translateX(4px);
-        }
-
-        .experience-item:last-child, .research-item:last-child, .project-item:last-child {
+        .project-item:last-child, .experience-item:last-child, .research-item:last-child {
             margin-bottom: 0;
         }
 
         .date {
-            color: #3b82f6;
+            color: #2d7a4f;
             font-weight: 600;
             font-size: 0.9rem;
-            display: inline-block;
-            margin-bottom: 0.5rem;
         }
 
-        .tech-category {
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            background-color: #f8fafc;
-            border-radius: 8px;
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
         }
 
-        .tech-category h4 {
-            color: #1e40af;
-            margin-bottom: 0.75rem;
-            font-size: 1.05rem;
-            font-weight: 600;
-        }
-
-        .tech-category p {
-            color: #475569;
-            line-height: 1.8;
+        .skill-tag {
+            background-color: #2d7a4f;
+            color: white;
+            padding: 0.7rem 1rem;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 500;
         }
 
         .cert-list, .conference-list, .reference-list {
             display: grid;
-            gap: 1rem;
+            gap: 0.8rem;
         }
 
         .cert-item, .conference-item, .reference-item {
-            padding: 1.25rem;
-            background-color: #f8fafc;
-            border-radius: 8px;
-            border-left: 3px solid #60a5fa;
-            transition: all 0.3s ease;
-        }
-
-        .cert-item:hover, .conference-item:hover, .reference-item:hover {
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
-            transform: translateX(4px);
+            padding: 0.8rem;
+            background-color: white;
+            border-radius: 4px;
+            border-left: 3px solid #2d7a4f;
         }
 
         .cert-name, .conference-name, .reference-name {
-            color: #1e40af;
+            color: #1a4d2e;
             font-weight: 600;
-            font-size: 1.05rem;
-            margin-bottom: 0.5rem;
         }
 
         .cert-org, .conference-org {
-            color: #3b82f6;
+            color: #2d7a4f;
             font-size: 0.9rem;
-            margin-bottom: 0.25rem;
         }
 
         .cert-date, .conference-date {
-            color: #64748b;
+            color: #666;
             font-size: 0.85rem;
+        }
+
+        .competencies {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+        }
+
+        .competencies strong {
+            color: #1a4d2e;
+        }
+
+        .tech-category {
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-category h4 {
+            color: #1a4d2e;
+            margin-bottom: 0.5rem;
         }
 
         .language-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             gap: 1rem;
         }
 
         .language-item {
-            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-            padding: 1.25rem;
-            border-radius: 8px;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 6px;
             text-align: center;
-            border: 2px solid #93c5fd;
-            transition: all 0.3s ease;
-        }
-
-        .language-item:hover {
-            border-color: #3b82f6;
-            transform: translateY(-4px);
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+            border: 2px solid #2d7a4f;
         }
 
         .language-item strong {
-            color: #1e40af;
+            color: #1a4d2e;
             display: block;
-            margin-bottom: 0.5rem;
-            font-size: 1.05rem;
-        }
-
-        .language-item span {
-            color: #475569;
-            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
         }
 
         .admin-list {
@@ -271,26 +224,20 @@
         }
 
         .admin-list li {
-            padding: 1rem;
-            background-color: #f8fafc;
-            border-radius: 8px;
-            margin-bottom: 0.75rem;
-            border-left: 3px solid #60a5fa;
-            transition: all 0.3s ease;
-        }
-
-        .admin-list li:hover {
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
-            transform: translateX(4px);
+            padding: 0.8rem;
+            background-color: white;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+            border-left: 3px solid #2d7a4f;
         }
 
         .admin-list li strong {
-            color: #1e40af;
+            color: #1a4d2e;
         }
 
         footer {
-            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-            color: #cbd5e1;
+            background-color: #1a4d2e;
+            color: white;
             text-align: center;
             padding: 2rem;
             margin-top: 3rem;
@@ -306,35 +253,16 @@
             }
 
             nav ul {
-                gap: 0;
+                gap: 0.5rem;
             }
 
             nav a {
-                padding: 0.75rem 1rem;
+                padding: 0.4rem 0.8rem;
                 font-size: 0.85rem;
             }
 
             section {
                 padding: 1.5rem;
-            }
-
-            .container {
-                padding: 1.5rem 1rem;
-            }
-        }
-
-        @media print {
-            body {
-                background-color: white;
-            }
-            
-            nav {
-                display: none;
-            }
-            
-            section {
-                break-inside: avoid;
-                page-break-inside: avoid;
             }
         }
     </style>
@@ -343,46 +271,38 @@
     <header>
         <h1>Mahnoor Rehman Abbasi</h1>
         <p class="subtitle">Electronics Engineering Graduate · AI & Autonomous Systems Researcher</p>
-        <p class="header-description">Electronics Engineering graduate with expertise in AI, machine learning, autonomous systems, and battery technologies. Research interests include multimodal AI systems, sensor fusion in autonomous vehicles, and energy management in electric vehicles. Currently advancing biomedical applications through ML-assisted computational fluid dynamics research.</p>
+        <p style="max-width: 900px; margin: 1rem auto; font-size: 0.95rem;">Electronics Engineering graduate with a strong foundation in AI, machine learning, autonomous systems, and battery technologies. Research interests include multimodal AI systems, sensor fusion in autonomous vehicles, and energy management in electric vehicles. Seeking Master's studies to advance in AI-driven robotics and sustainable energy systems.</p>
         <div class="contact-links">
-            <a href="mailto:mahnoor.ra0011@gmail.com">✉ Email</a>
-            <a href="https://github.com/Mahnoor402-beep" target="_blank">💻 GitHub</a>
-            <a href="#" target="_blank">🔗 LinkedIn</a>
+            <a href="mailto:mahnoor.ra0011@gmail.com">Email</a>
+            <a href="https://github.com/Mahnoor402-beep" target="_blank">GitHub</a>
+            <a href="#" target="_blank">LinkedIn</a>
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#publications">Publications</a></li>
+            <li><a href="#summary">Summary</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#research">Research & Projects</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#technical">Skills & Certifications</a></li>
+            <li><a href="#technical">Technical Skills</a></li>
             <li><a href="#conferences">Conferences</a></li>
+            <li><a href="#administrative">Administrative</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#languages">Languages</a></li>
             <li><a href="#references">References</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
+        <section id="summary">
+            <h2>Professional Summary</h2>
             <p>Electronics Engineering graduate with a strong foundation in AI, machine learning, autonomous systems, and battery technologies, demonstrated through rigorous academic projects, certifications, and research experiences. Research interests include multimodal AI systems, sensor fusion in autonomous vehicles, and energy management in electric vehicles. Conducted undergraduate research in optical sensor systems and completed advanced certification projects involving simulations, algorithm implementation, and peer-reviewed reports. Seeking Master's studies to advance in AI-driven robotics and sustainable energy systems, with skills in predictive modeling, Kalman filters, and data-driven experimentation.</p>
             
             <div class="competencies">
-                <strong>Core Competencies:</strong> Machine Learning · Deep Learning · NLP · Autonomous Systems · ESP32/STM32 Microcontrollers · Python · Predictive Modelling · Data Analytics · Chatbot Development · Cyber-Security · Computational Fluid Dynamics
-            </div>
-        </section>
-
-        <section id="publications">
-            <h2>Publications</h2>
-            
-            <div class="research-item">
-                <h3>Machine Learning–Assisted Computational Fluid Dynamics for Cardiovascular Hemodynamics: Validation, Limitations, and Clinical Translation</h3>
-                <p class="date">2025 (In Progress)</p>
-                <p style="margin-top: 1rem;"><strong>Research Focus:</strong> Investigating the integration of machine learning algorithms with computational fluid dynamics (CFD) to enhance cardiovascular hemodynamic simulations. The research addresses validation methodologies, identifies current limitations in ML-CFD approaches, and explores pathways for clinical translation in cardiovascular disease diagnosis and treatment planning.</p>
-                <p style="margin-top: 0.75rem;"><strong>Key Areas:</strong> ML model validation for hemodynamic predictions, computational efficiency optimization, clinical applicability assessment, and regulatory considerations for medical device integration.</p>
+                <strong>Core Competencies:</strong> Machine Learning · Deep Learning · NLP · Autonomous Systems · ESP32/STM32 Microcontrollers · Python · Predictive Modelling · Data Analytics · Chatbot Development · Cyber-Security
             </div>
         </section>
 
@@ -390,147 +310,202 @@
             <h2>Education</h2>
             <div class="experience-item">
                 <h3>Bachelor of Science in Electronics Engineering</h3>
-                <p style="margin-top: 0.5rem;"><strong>Quaid-i-Azam University</strong> · Islamabad, Pakistan</p>
+                <p><strong>Quaid-i-Azam University</strong> - Islamabad, Pakistan</p>
                 <p class="date">September 2020 – September 2024 (EQF Level 6)</p>
             </div>
         </section>
 
         <section id="research">
-            <h2>Research Experience & Key Projects</h2>
+            <h2>Research Experience and Projects</h2>
             
             <div class="research-item">
                 <h3>AI and Machine Learning Research</h3>
                 <p class="date">2024–2025</p>
-                <p style="margin-top: 0.75rem;"><em>Microsoft AI & ML Engineering Specialization and Certifications</em></p>
-                <p style="margin-top: 0.75rem;"><strong>Capstone Project:</strong> Developed predictive models including fraud detection systems and intelligent chatbots, involving comprehensive data preparation, deep learning training, Azure deployment, and evaluation for scalability and bias mitigation.</p>
+                <p><em>Microsoft AI & ML Engineering Specialization and Certifications</em></p>
+                <p><strong>Capstone Project:</strong> Developed a predictive model (e.g., fraud detection system or intelligent chatbot) involving data preparation, deep learning training, deployment on Azure, and evaluation for scalability and bias mitigation.</p>
             </div>
 
             <div class="research-item">
                 <h3>Autonomous Vehicles and Robotics Research</h3>
                 <p class="date">2024–2025</p>
-                <p style="margin-top: 0.75rem;"><em>University of Toronto Self-Driving Cars Specialization · University of Michigan Certification</em></p>
-                <p style="margin-top: 0.75rem;"><strong>Projects in CARLA Simulator:</strong> Programmed vehicle control models; implemented extended Kalman filters for sensor fusion (GPS, IMU, LIDAR); performed feature matching and CNN-based object detection/semantic segmentation; integrated perception with planning for a full autonomous software stack.</p>
+                <p><em>University of Toronto Self-Driving Cars Specialization and University of Michigan Certification</em></p>
+                <p><strong>Projects in CARLA Simulator:</strong> Programmed vehicle control models; implemented extended Kalman filters for sensor fusion (GPS, IMU, LIDAR); performed feature matching and CNN-based object detection/semantic segmentation; integrated perception with planning for a full autonomous software stack.</p>
             </div>
 
             <div class="research-item">
                 <h3>Battery Technologies and Management Systems Research</h3>
                 <p class="date">2024–2025</p>
-                <p style="margin-top: 0.75rem;"><em>Arizona State University Battery Technologies Specialization</em></p>
-                <p style="margin-top: 0.75rem;"><strong>Supporting Analysis:</strong> Evaluated trade-offs in battery types (Li-ion, Zn/Ni) for EV applications; foundational circuit design in Georgia Tech's Introduction to Electronics, including op-amp filters and diode regulators.</p>
-            </div>
-
-            <div class="research-item">
-                <h3>LifeLens – Multimodal Emotion Detection System</h3>
-                <p class="date">2025</p>
-                <p style="margin-top: 0.75rem;">Advanced AI-driven system for real-time emotion recognition by fusing multiple data modalities including facial expressions, voice tone, and textual input. Leveraged deep learning architectures such as CNNs for visual features and recurrent models for audio-text sequences, achieving robust classification across emotions like happiness, anger, sadness, and surprise.</p>
-            </div>
-
-            <div class="research-item">
-                <h3>SmartSplit – Intelligent Expense Management Application</h3>
-                <p class="date">2025</p>
-                <p style="margin-top: 0.75rem;">AI-powered mobile/web application automating personal and group expense tracking, categorization, and bill splitting. Utilized machine learning models for supervised classification, transaction labeling, and predictive analytics for spending forecasts. Processes receipts via OCR, detects patterns in user data, and suggests fair splits among groups.</p>
-            </div>
-
-            <div class="research-item">
-                <h3>IVAMS – Intelligent Vehicle Automation and Monitoring System</h3>
-                <p class="date">2024</p>
-                <p style="margin-top: 0.75rem;">ESP32 microcontroller-based prototype for autonomous vehicle monitoring and automation, incorporating real-time sensor data acquisition (temperature, GPS, accelerometers), control mechanisms, and Vehicle-to-Everything (V2X) communication concepts.</p>
+                <p><em>Arizona State University Battery Technologies Specialization</em></p>
+                <p><strong>Supporting Analysis:</strong> Evaluated trade-offs in battery types (Li-ion, Zn/Ni) for EV applications; foundational circuit design in Georgia Tech's Introduction to Electronics, including op-amp filters and diode regulators.</p>
             </div>
 
             <div class="research-item">
                 <h3>Undergraduate Researcher</h3>
-                <p style="margin-top: 0.5rem;"><strong>SPIE (International Society for Optics and Photonics)</strong></p>
+                <p><strong>Quaid-i-Azam University</strong></p>
                 <p class="date">November 2021 – December 2021</p>
-                <p style="margin-top: 0.75rem;">Conducted research on optical sensor systems, control mechanisms, and Vehicle-to-Everything (V2X) communication concepts.</p>
+                <p>Conducted research on control mechanisms and Vehicle-to-Everything (V2X) communication concepts.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Key Projects</h2>
+            
+            <div class="project-item">
+                <h3>LifeLens – Multimodal Emotion Detection System</h3>
+                <p class="date">2025</p>
+                <p>LifeLens is an advanced AI-driven system designed for real-time emotion recognition by fusing multiple data modalities, including facial expressions, voice tone, and textual input. Leveraging deep learning architectures such as convolutional neural networks (CNNs) for visual features and recurrent models for audio-text sequences, the project achieved robust classification across emotions like happiness, anger, sadness, and surprise.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>SmartSplit – Intelligent Expense Management Application</h3>
+                <p class="date">2025</p>
+                <p>SmartSplit is an AI-powered mobile/web application that automates personal and group expense tracking, categorization, and bill splitting. Utilizing machine learning models (e.g., supervised classification for transaction labeling and predictive analytics for spending forecasts), it processes receipts via OCR, detects patterns in user data, and suggests fair splits among groups.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>IVAMS – Intelligent Vehicle Automation and Monitoring System</h3>
+                <p class="date">2024</p>
+                <p>IVAMS is an ESP32 microcontroller-based prototype for autonomous vehicle monitoring and automation, incorporating real-time sensor data acquisition (e.g., temperature, GPS, accelerometers), control mechanisms, and Vehicle-to-Everything (V2X) communication concepts.</p>
             </div>
         </section>
 
         <section id="experience">
-            <h2>Professional Experience</h2>
+            <h2>Professional Career</h2>
 
             <div class="experience-item">
                 <h3>IT Support Specialist</h3>
-                <p style="margin-top: 0.5rem;"><strong>AVN Shipping FZE</strong> · Ajman, UAE</p>
+                <p><strong>AVN Shipping FZE</strong> - Ajman, UAE</p>
                 <p class="date">October 2025 – Present</p>
-                <p style="margin-top: 0.75rem;">Provide comprehensive technical support and troubleshoot hardware/software issues for logistics operations. Manage IT infrastructure and ensure seamless technology integration across the organization.</p>
+                <p>Provide comprehensive technical support and troubleshoot hardware/software issues for logistics operations.</p>
             </div>
 
             <div class="experience-item">
                 <h3>Data Analyst (Remote)</h3>
-                <p style="margin-top: 0.5rem;"><strong>Lotus BPM AI</strong> · Texas, USA</p>
+                <p><strong>Lotus BPM AI</strong> - Texas, USA</p>
                 <p class="date">August 2025 – Present</p>
-                <p style="margin-top: 0.75rem;">Perform advanced data analysis and develop AI-driven solutions for business process optimization. Implement machine learning models to extract insights and drive data-informed decision-making.</p>
+                <p>Perform data analysis and develop AI-driven solutions for business process optimization.</p>
             </div>
 
             <div class="experience-item">
                 <h3>Proxy Generating Agent (AI Content Strategist)</h3>
-                <p style="margin-top: 0.5rem;"><strong>Hackta Connect</strong> · Remote</p>
+                <p><strong>Hackta Connect</strong> - Remote</p>
                 <p class="date">September 2024 – September 2025</p>
-                <p style="margin-top: 0.75rem;">Designed AI-driven content strategies and produced 300+ high-quality blogs using generative AI. Optimized content for engagement and SEO performance across multiple platforms.</p>
+                <p>Designed AI-driven content strategies and produced 300+ high-quality blogs using generative AI.</p>
             </div>
 
             <div class="experience-item">
                 <h3>Artificial Intelligence Engineer (Remote)</h3>
-                <p style="margin-top: 0.5rem;"><strong>Overpass</strong></p>
+                <p><strong>Overpass</strong></p>
                 <p class="date">August 2021 – January 2025</p>
-                <p style="margin-top: 0.75rem;">Implemented machine learning algorithms for predictive analytics and data-driven decision making. Developed scalable AI solutions for various business applications.</p>
+                <p>Implemented machine learning algorithms for predictive analytics and data-driven decision making.</p>
             </div>
 
             <div class="experience-item">
                 <h3>Chatbot Developer (Freelance)</h3>
-                <p style="margin-top: 0.5rem;"><strong>Upwork</strong></p>
+                <p><strong>Upwork</strong></p>
                 <p class="date">August 2023 – January 2024</p>
-                <p style="margin-top: 0.75rem;">Built NLP-powered conversational chatbots for healthcare, e-commerce, and education clients. Designed natural language understanding systems with high accuracy and user satisfaction.</p>
+                <p>Built NLP-powered conversational chatbots for healthcare, e-commerce, and education clients.</p>
             </div>
 
             <div class="experience-item">
                 <h3>Prompt Engineer (Internship)</h3>
-                <p style="margin-top: 0.5rem;"><strong>Elite International</strong> · Islamabad, Pakistan</p>
+                <p><strong>Elite International</strong> - Islamabad, Pakistan</p>
                 <p class="date">August 2023 – January 2024</p>
-                <p style="margin-top: 0.75rem;">Engineered prompts for NLP systems and automation workflows. Optimized AI model outputs for various business applications.</p>
+                <p>Engineered prompts for NLP systems and automation workflows.</p>
             </div>
         </section>
 
         <section id="technical">
-            <h2>Technical Skills & Certifications</h2>
+            <h2>Technical Skills & Expertise</h2>
             
             <div class="tech-category">
-                <h4>Programming & Development Tools</h4>
-                <p>Python (Advanced), C++, MATLAB, Microsoft Excel (Advanced), Microsoft Office Suite, Version Control (Git)</p>
+                <h4>Programming & Tools</h4>
+                <p>Python (Advanced), C++, MATLAB, Microsoft Excel (Advanced), Microsoft Office Suite</p>
             </div>
 
             <div class="tech-category">
-                <h4>AI/ML Technologies & Frameworks</h4>
-                <p>Machine Learning, Deep Learning, Neural Networks, Natural Language Processing, Computer Vision, Prompt Engineering, Predictive Modelling, Data Analytics, TensorFlow, PyTorch, Scikit-learn, Azure ML</p>
+                <h4>AI/ML Technologies</h4>
+                <p>Machine Learning, Deep Learning, Neural Networks, Natural Language Processing, Prompt Engineering, Predictive Modelling, Data Analytics, TensorFlow, PyTorch</p>
             </div>
 
             <div class="tech-category">
-                <h4>Autonomous Systems & Robotics</h4>
-                <p>ESP32/STM32 Microcontrollers, Real-time Sensing & Control, Sensor Fusion, V2X Communication, Self-Driving Car Technologies, CARLA Simulator, Kalman Filtering, Object Detection, Semantic Segmentation</p>
+                <h4>Autonomous Systems</h4>
+                <p>ESP32/STM32 Microcontrollers, Real-time Sensing & Control, V2X Concepts, Self-Driving Car Technologies, Sensor Integration</p>
             </div>
 
             <div class="tech-category">
-                <h4>Electric Vehicles & Energy Systems</h4>
-                <p>Battery Technologies (Li-ion, Zn/Ni-based), EV Systems Architecture, Battery Management Systems, Energy Optimization, Circuit Design</p>
+                <h4>Electric Vehicles</h4>
+                <p>Battery Technologies (Li-based, Zn/Ni-based), EV Systems, Energy Management</p>
             </div>
 
             <div class="tech-category">
-                <h4>Biomedical & Computational Engineering</h4>
-                <p>Computational Fluid Dynamics (CFD), ML-assisted Simulations, Cardiovascular Hemodynamics, Clinical Translation Research</p>
+                <h4>Other Technical Skills</h4>
+                <p>Data Security, Dashboard Development, Chatbot Development, Technical Writing, Web Development</p>
             </div>
 
             <div class="tech-category">
-                <h4>Additional Technical Skills</h4>
-                <p>Data Security, Cybersecurity Fundamentals, Dashboard Development, Chatbot Development, Technical Writing, Web Development, Database Management</p>
+                <h4>Creative & Media</h4>
+                <p>Video Editing (Premiere Pro, CapCut), Graphic Design (Canva, Photoshop, Illustrator), Digital Content Creation</p>
             </div>
+        </section>
 
-            <div class="tech-category">
-                <h4>Creative & Media Production</h4>
-                <p>Video Editing (Adobe Premiere Pro, CapCut), Graphic Design (Canva, Adobe Photoshop, Adobe Illustrator), Digital Content Creation, Social Media Management</p>
+        <section id="conferences">
+            <h2>Conferences & Workshops</h2>
+            <div class="conference-list">
+                <div class="conference-item">
+                    <div class="conference-name">International Workshop on Data and AI-Driven Mineral Exploration</div>
+                    <div class="conference-org">Quaid-i-Azam University (QAU), Islamabad</div>
+                    <div class="conference-date">August 2025</div>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem;">Focused on AI applications in geoscientific data analysis and mineral exploration</p>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-name">Three-Day Training Workshop on AI & Data Sciences - Advancing Research Across All Sciences</div>
+                    <div class="conference-org">Pakistan Scientific and Technological Information Center (PASTIC)</div>
+                    <div class="conference-date">2023–2025</div>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-name">Seminar on Emerging Role of Artificial Intelligence</div>
+                    <div class="conference-org">Institute of Information Technology (IIT), QAU in collaboration with ORIC</div>
+                    <div class="conference-date">December 2024</div>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-name">Seminar on "Humans & Machines"</div>
+                    <div class="conference-org">IIT Society, QAU</div>
+                    <div class="conference-date">December 2024</div>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem;">Explored symbiotic relationship in innovation</p>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-name">Workshop on AI and Technology in 2050</div>
+                    <div class="conference-org">Institute of Information Technology, QAU</div>
+                    <div class="conference-date">November 2023</div>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-name">Training on SPSS, AI, and Data Science</div>
+                    <div class="conference-org">Quaid-i-Azam University</div>
+                    <div class="conference-date">2023–2024</div>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem;">Hands-on departmental training sessions</p>
+                </div>
+                <div class="conference-item">
+                    <div class="conference-name">Innovation Summit for Microelectronics and Artificial Intelligence</div>
+                    <div class="conference-org">Department of Electronics, QAU in collaboration with IRP</div>
+                    <div class="conference-date">June 16–17, 2021</div>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem;">Online event featuring international speakers from Pakistan, China, and Italy</p>
+                </div>
             </div>
+        </section>
 
-            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Professional Certifications</h3>
-            
+        <section id="administrative">
+            <h2>Administrative Activities</h2>
+            <ul class="admin-list">
+                <li><strong>Fundraising Manager</strong> – Feeding People Foundation (Children) – Successfully raised funds exceeding $5,000 for annual charity initiatives supporting children in need</li>
+                <li><strong>AI Ambassador / Volunteer Tutor</strong> (Jul–Aug 2025) – Mentored students in AI concepts and practical applications</li>
+                <li><strong>Digital Media & Social Media Management</strong> – Enhanced brand visibility through strategic content creation</li>
+                <li><strong>Research Administration Support</strong> – Assisted in lab documentation and photonics sensor experiments</li>
+            </ul>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
             <div class="cert-list">
                 <div class="cert-item">
                     <div class="cert-name">Neural Networks and Deep Learning</div>
@@ -543,7 +518,7 @@
                     <div class="cert-date">June 2025</div>
                 </div>
                 <div class="cert-item">
-                    <div class="cert-name">Microsoft AI & ML Engineering Specialization</div>
+                    <div class="cert-name">Microsoft AI & ML Engineering</div>
                     <div class="cert-org">Microsoft</div>
                     <div class="cert-date">March 2024</div>
                 </div>
@@ -551,6 +526,16 @@
                     <div class="cert-name">Microsoft Azure Machine Learning</div>
                     <div class="cert-org">Microsoft AI</div>
                     <div class="cert-date">August 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Google AI Essentials</div>
+                    <div class="cert-org">Google</div>
+                    <div class="cert-date">April 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">Big Data Essentials</div>
+                    <div class="cert-org">Google</div>
+                    <div class="cert-date">February 2025</div>
                 </div>
                 <div class="cert-item">
                     <div class="cert-name">Self-Driving Cars Specialization (4 courses)</div>
@@ -563,23 +548,23 @@
                     <div class="cert-date">February 2025</div>
                 </div>
                 <div class="cert-item">
-                    <div class="cert-name">Batteries and Electric Vehicles Specialization</div>
+                    <div class="cert-name">Batteries and Electric Vehicles (Series)</div>
                     <div class="cert-org">Arizona State University</div>
                     <div class="cert-date">July 2025</div>
                 </div>
                 <div class="cert-item">
-                    <div class="cert-name">Google AI Essentials</div>
-                    <div class="cert-org">Google</div>
-                    <div class="cert-date">April 2025</div>
+                    <div class="cert-name">Microsoft IT Support Specialist</div>
+                    <div class="cert-org">Microsoft</div>
+                    <div class="cert-date">July 2025</div>
                 </div>
                 <div class="cert-item">
-                    <div class="cert-name">Google IT Support & Cybersecurity Professional Certificate</div>
+                    <div class="cert-name">Google IT Support & Google Cybersecurity</div>
                     <div class="cert-org">Google</div>
                     <div class="cert-date">2024–2025</div>
                 </div>
                 <div class="cert-item">
-                    <div class="cert-name">Microsoft IT Support Specialist</div>
-                    <div class="cert-org">Microsoft</div>
+                    <div class="cert-name">Python</div>
+                    <div class="cert-org">Great Learning</div>
                     <div class="cert-date">July 2025</div>
                 </div>
                 <div class="cert-item">
@@ -588,14 +573,25 @@
                     <div class="cert-date">April 2025</div>
                 </div>
                 <div class="cert-item">
-                    <div class="cert-name">Python Programming</div>
-                    <div class="cert-org">Great Learning</div>
+                    <div class="cert-name">Google Prompting Essentials</div>
+                    <div class="cert-org">Google</div>
                     <div class="cert-date">July 2025</div>
                 </div>
+                <div class="cert-item">
+                    <div class="cert-name">Work Smarter with Microsoft Excel</div>
+                    <div class="cert-org">Microsoft</div>
+                    <div class="cert-date">July 2025</div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-name">SEO Fundamentals</div>
+                    <div class="cert-org">SEMrush Academy</div>
+                    <div class="cert-date">February 2024</div>
+                </div>
             </div>
+        </section>
 
-            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Languages</h3>
-            
+        <section id="languages">
+            <h2>Languages</h2>
             <div class="language-grid">
                 <div class="language-item">
                     <strong>English</strong>
@@ -616,59 +612,40 @@
             </div>
         </section>
 
-        <section id="conferences">
-            <h2>Conferences & Professional Development</h2>
-            <div class="conference-list">
-                <div class="conference-item">
-                    <div class="conference-name">International Workshop on Data and AI-Driven Mineral Exploration</div>
-                    <div class="conference-org">Quaid-i-Azam University (QAU), Islamabad</div>
-                    <div class="conference-date">August 2025</div>
-                    <p style="margin-top: 0.75rem; color: #475569; font-size: 0.9rem;">Focused on AI applications in geoscientific data analysis and mineral exploration</p>
-                </div>
-                <div class="conference-item">
-                    <div class="conference-name">Three-Day Training Workshop on AI & Data Sciences - Advancing Research Across All Sciences</div>
-                    <div class="conference-org">Pakistan Scientific and Technological Information Center (PASTIC)</div>
-                    <div class="conference-date">2023–2025</div>
-                </div>
-                <div class="conference-item">
-                    <div class="conference-name">Seminar on Emerging Role of Artificial Intelligence</div>
-                    <div class="conference-org">Institute of Information Technology (IIT), QAU in collaboration with ORIC</div>
-                    <div class="conference-date">December 2024</div>
-                </div>
-                <div class="conference-item">
-                    <div class="conference-name">Seminar on "Humans & Machines"</div>
-                    <div class="conference-org">IIT Society, QAU</div>
-                    <div class="conference-date">December 2024</div>
-                    <p style="margin-top: 0.75rem; color: #475569; font-size: 0.9rem;">Explored the symbiotic relationship between humans and technology in innovation</p>
-                </div>
-                <div class="conference-item">
-                    <div class="conference-name">Workshop on AI and Technology in 2050</div>
-                    <div class="conference-org">Institute of Information Technology, QAU</div>
-                    <div class="conference-date">November 2023</div>
-                </div>
-                <div class="conference-item">
-                    <div class="conference-name">Innovation Summit for Microelectronics and Artificial Intelligence</div>
-                    <div class="conference-org">Department of Electronics, QAU in collaboration with IRP</div>
-                    <div class="conference-date">June 16–17, 2021</div>
-                    <p style="margin-top: 0.75rem; color: #475569; font-size: 0.9rem;">International online event featuring speakers from Pakistan, China, and Italy</p>
-                </div>
-            </div>
-
-            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Leadership & Administrative Activities</h3>
-            
-            <ul class="admin-list">
-                <li><strong>Fundraising Manager</strong> – Feeding People Foundation (Children) – Successfully raised funds exceeding $5,000 for annual charity initiatives supporting children in need</li>
-                <li><strong>AI Ambassador / Volunteer Tutor</strong> (July–August 2025) – Mentored students in AI concepts and practical applications, fostering next-generation talent</li>
-                <li><strong>Digital Media & Social Media Management</strong> – Enhanced brand visibility through strategic content creation and audience engagement strategies</li>
-                <li><strong>Research Administration Support</strong> – Assisted in lab documentation, photonics sensor experiments, and research coordination</li>
-            </ul>
-        </section>
-
         <section id="references">
-            <h2>Academic References</h2>
+            <h2>References</h2>
             <div class="reference-list">
                 <div class="reference-item">
-                    <div class="reference-name">Dr. Qurrat-ul-Ain Minhas</div>
-                    <p style="margin-top: 0.5rem; color: #475569;">Professor · Wireless Communications, Ad Hoc Networks</p>
-                    <p style="margin-top: 0.5rem; color: #475569;">Quaid-i-Azam University</p>
-                    <p style="margin-top: 0.5rem; color: #64748b; font-size: 0.9rem;">
+                    <div class="reference-name">Dr. Qurrat-ul-Ain Minhas – Professor</div>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem;">Wireless Communications, Ad Hoc Networks</p>
+                    <p style="font-size: 0.9rem;">Email: qminhas@qau.edu.pk | Phone: +92 5190643087</p>
+                </div>
+                <div class="reference-item">
+                    <div class="reference-name">Dr. Muhammad Zia – Professor</div>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem;">Ph.D. Electronics, University of California at Davis, USA</p>
+                    <p style="font-size: 0.9rem;">Email: mzia@qau.edu.pk | Phone: +92 5190643218</p>
+                </div>
+                <div class="reference-item">
+                    <div class="reference-name">Dr. Azhar Abbas Rizvi – Professor</div>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem;">Ph.D. Electrical and Computer Engineering, Caltech</p>
+                    <p style="font-size: 0.9rem;">Email: azhar@qau.edu.pk | Phone: +92 3365114659</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> mahnoor.ra0011@gmail.com</p>
+            <p><strong>Phone:</strong> (+971) 52-573-8362</p>
+            <p><strong>Location:</strong> Ajman, United Arab Emirates</p>
+            <p><strong>Current Position:</strong> IT Support Specialist, AVN Shipping FZE</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Mahnoor402-beep" style="color: #2d7a4f;">Mahnoor402-beep</a></p>
+            <p><strong>LinkedIn:</strong> <a href="#" style="color: #2d7a4f;">Profile</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mahnoor Rehman Abbasi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
